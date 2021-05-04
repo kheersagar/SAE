@@ -3,7 +3,7 @@
 @media(min-width:1000px){
   .navbar{
     min-height: 100px;
-    padding: 5vh 6vw;
+    padding: 5vh 4vw;
     background-color: transparent;
   }
   .nav__right{
