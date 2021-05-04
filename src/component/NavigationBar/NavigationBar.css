@@ -1,0 +1,24 @@
+
+
+@media(min-width:1000px){
+  .navbar{
+    min-height: 100px;
+    padding: 5vh 6vw;
+    background-color: transparent;
+  }
+  .nav__right{
+    margin-right: 50px;
+  }
+  .nav__middle{
+    margin: 0 auto;
+  }
+  .nav__left{
+    margin-left: 50px;
+  }
+  .nav__active{
+    color: black;
+  }
+  .nav-link{
+    font-size: 1.5rem;
+  }
+}
