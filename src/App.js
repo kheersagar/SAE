@@ -9,6 +9,9 @@ function App() {
     <div className="App">
     <NavigationBar />
       <Switch>
+        <Route path="/" >
+          <h1>Home</h1>
+        </Route>
         <Route path="/benefits">
           <h1>benefits</h1>
         </Route>
