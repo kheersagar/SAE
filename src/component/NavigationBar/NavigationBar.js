@@ -24,12 +24,6 @@ function NavigationBar() {
         <NavLink to="/member" exact activeClassName="nav__active" className="nav-link">
           Member
         </NavLink>
-        <NavLink to="/blog" exact activeClassName="nav__active" className="nav-link">
-          blog
-        </NavLink>
-        <NavLink to="/team" exact activeClassName="nav__active" className="nav-link">
-          Team
-        </NavLink>
         </Nav>
         <Nav className="nav__right">
           <NavLink activeClassName="nav__active" className="nav-link" to="/member">
