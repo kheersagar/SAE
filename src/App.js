@@ -10,8 +10,11 @@ function App() {
     <div className="App">
     <NavigationBar />
       <Switch>
-        <Route path="/" exact>
-           <Containers />
+        <Route path="/" >
+        <Containers />
+        </Route>
+        <Route path="/benefits">
+          <h1>benefits</h1>
         </Route>
         <Route path="/goals" exact>
           <h1>goals</h1>

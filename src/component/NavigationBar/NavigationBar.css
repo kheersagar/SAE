@@ -3,7 +3,7 @@
 @media(min-width:1000px){
   .navbar{
     min-height: 100px;
-    padding: 5vh 5vw;
+    padding: 5vh 10vw;
     background-color: transparent;
   }
   .nav__right{
@@ -20,5 +20,7 @@
   }
   .nav-link{
     font-size: 1rem;
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
   }
 }
