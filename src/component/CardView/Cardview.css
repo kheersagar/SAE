@@ -7,10 +7,6 @@
 
 }
 
-.img-fluid{
-  border-bottom-left-radius:40px;
-}
-
 .card{
   border: none !important;
 }
@@ -31,6 +27,9 @@
 .image_box{
   width: 200px;
   height: 300px;
+}
+.image_box >img{
+  border-bottom-left-radius: 50px;
 }
 @media(min-width:1000px){
 

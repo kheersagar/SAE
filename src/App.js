@@ -26,6 +26,7 @@ function App() {
           <Route path="/" >
             <Landingpage/>
             <Containers />
+            <CardViews/>
           </Route>
           <Route path="/benefits">
             <h1>benefits</h1>

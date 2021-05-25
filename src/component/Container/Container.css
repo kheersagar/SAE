@@ -57,6 +57,7 @@
   overflow: hidden;
   overflow-x: scroll;
   scroll-behavior: smooth;
+  padding-bottom: 1rem;
 }
 
 /* width */
