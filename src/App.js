@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router,NavLink,Route, Switch} from "react-router-dom";
 import './App.css';
 import Containers from './component/Container/Containers';
+import CardViews from './component/CardView/CardViews';
 import NavigationBar from './component/NavigationBar/NavigationBar';
 
 
@@ -10,8 +11,9 @@ function App() {
     <div className="App">
     <NavigationBar />
       <Switch>
-        <Route path="/" >
+      <Route path="/" >
         <Containers />
+        <CardViews/>
         </Route>
         <Route path="/benefits">
           <h1>benefits</h1>

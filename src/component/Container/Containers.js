@@ -1,6 +1,5 @@
 import React, { createRef, useRef } from 'react';
 import { Container, Row, Col, Card,Button } from 'react-bootstrap';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Container.css";
 import image from "../../Image/card_background.jpg";
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
@@ -38,7 +37,7 @@ function Containers ()  {
                     arr.map((e)=>{
                       return(
                         <Card className="First_card card__img">
-                        <Card.Img variant="top"  src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" className="card__profile"/>
+                        <Card.Img variant="left"  src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" className="card__profile"/>
                         <Card.Title style={{marginTop:"18px", fontWeight:"700"}}>CARD TITLE</Card.Title>
                         <Card.Text  className="textarea">
                             Thre is noting important to read so  chill and enjoy your life.SomeThing Special in our life

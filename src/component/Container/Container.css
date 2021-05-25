@@ -20,6 +20,7 @@
   background-size: cover;
   background-position: right;
 }
+
 .arrow{
   border-radius: 50%;
   width: 60px;
@@ -28,22 +29,27 @@
   background-color: #adb5bd;
   border-color: #adb5bd;
 }
+
 .arrow:hover{
   background-color: rgb(3, 82, 3);
   border: none;
   box-shadow: none;
 }
+
 .arrow:focus{
   background-color: green;
   border: none;
   box-shadow: none;
 }
+
 .textarea{
   padding: 1rem;
 }
+
 .row1{
   width: 100%;
 }
+
 .col2{
   display: flex;
   overflow: hidden;
@@ -55,6 +61,7 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
 .scroll__btn{
   margin-top: 5rem;
 }
