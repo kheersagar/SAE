@@ -7,27 +7,17 @@ import logos from "../../Image/vector.jpg";
 function landing() {
   return (
     <>
-     {/* <div  className="head1">
-      SUPPORTING, CONNECTING &
-      DEVELOPING SPORTING DIRECTORS 
-      </div>
-      <div  className="head2">
-       <h1> Association of Sporting Directors</h1>
-      </div>
-      <div  className="head3">
-        <h4> MEET THE TEAM</h4>
-     </div> */}
      <div className="main__main">
     <div className="landing__main">
       <div className="left__main">
         <div>
-          <div>
+          <div className="moto">
           SUPPORTING, CONNECTING &<br/>
           DEVELOPING SPORTING DIRECTORS 
           </div>
         </div>
-        <div>
-      <h1> Association of<br/> Sporting Directors</h1>
+        <div className="cmp_name">
+       Association of<br/> Sporting Directors
         </div>
         
       </div>
