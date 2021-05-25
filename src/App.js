@@ -1,9 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router,NavLink,Route, Switch} from "react-router-dom";
 import './App.css';
+import  './component/Landingpage/Landing.css';
 import Containers from './component/Container/Containers';
 import NavigationBar from './component/NavigationBar/NavigationBar';
 
+import Landingpage from './component/Landingpage/landing';
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
     <NavigationBar />
       <Switch>
         <Route path="/" >
+          <Landingpage/>
         <Containers />
         </Route>
         <Route path="/benefits">
