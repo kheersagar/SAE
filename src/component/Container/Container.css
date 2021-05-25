@@ -13,9 +13,11 @@
 }
 
 .card__img{
-  height: 390px;
+  border-radius: 8px;
+  box-shadow: 2px 4px 5px gray;
+  height: 400px;
   min-width: 250px !important;
-  margin-right: 2rem;
+  margin-right: 2.5rem;
   background-image: url(../../Image/card_background.jpg);
   background-size: cover;
   background-position: right;
@@ -54,9 +56,9 @@
   display: flex;
   overflow: hidden;
   overflow-x: scroll;
-  transform: translate3d(10px, 0px, 0px);
-  
+  scroll-behavior: smooth;
 }
+
 /* width */
 ::-webkit-scrollbar {
   display: none;

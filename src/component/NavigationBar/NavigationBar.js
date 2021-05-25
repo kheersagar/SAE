@@ -1,13 +1,32 @@
-import React from 'react';
-import {Navbar,Form,Button,FormControl,Nav,NavDropdown} from 'react-bootstrap';
+import React, { useState } from 'react';
+import {Navbar,Form,Button,FormControl,Nav,NavDropdown,Fade } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import "./NavigationBar.css";
 import logo from "../../Image/logo.png";
 
 function NavigationBar() {
+  const [prevOffset,setPrevOffset] =useState();
+  const [scrollDirection, setScrollDirection] = useState(null)
+  const customStyle={
+    position: scrollDirection =="up" && prevOffset != 0 ? "fixed" : "relative",
+    top:"0",
+    width:"100%",
+  }
+  window.addEventListener('scroll',()=>{
+    let scrollY = window.scrollY;
+    if (scrollY === 0) {
+      setScrollDirection(null)
+  }
+  if (scrollY > prevOffset){
+      setScrollDirection("down")
+  } else if (scrollY < prevOffset) {
+      setScrollDirection("up");
+  }
+  setPrevOffset(scrollY);
+  })
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg"  bg="light" variant="light" className="navbar">
+      <Navbar collapseOnSelect expand="lg"  bg="light" variant="light" className={`navbar ${scrollDirection =='down' ? 'fade_out' :'fade_int'}` } style={customStyle}>
       <Navbar.Brand href="#home" className="nav__left">
         <img src={logo} alt="logo" width="100" height="35" style={{marginRight:"10px"}}/> 
         React-Bootstrap
