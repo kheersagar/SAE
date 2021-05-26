@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import {Navbar,Form,Button,FormControl,Nav,NavDropdown,Fade } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import Aos from "aos";
+
+import "aos/dist/aos.css";
 import "./NavigationBar.css";
 import logo from "../../Image/logo.png";
 
@@ -8,7 +11,7 @@ function NavigationBar() {
   const [prevOffset,setPrevOffset] =useState();
   const [scrollDirection, setScrollDirection] = useState(null)
   const customStyle={
-    position: scrollDirection =="up" && prevOffset != 0 ? "fixed" : "relative",
+    position: scrollDirection =="up" && prevOffset > 50 ? "fixed" : "relative",
     top:"0",
     width:"100%",
   }
@@ -24,6 +27,13 @@ function NavigationBar() {
   }
   setPrevOffset(scrollY);
   })
+
+  Aos.init({
+    offset: window.innerHeight > 1000 ?  600: 300,
+    duration: 600,
+    easing: 'ease-in-sine',
+    delay: 50,
+  });
   return (
     <div>
       <Navbar collapseOnSelect expand="lg"  bg="light" variant="light" className={`navbar ${scrollDirection =='down' ? 'fade_out' :'fade_int'}` } style={customStyle}>

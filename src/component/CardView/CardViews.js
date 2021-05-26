@@ -1,14 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Row, Col, Card,Button } from 'react-bootstrap';
+import Aos from "aos";
+
+import "aos/dist/aos.css";
 import "./Cardview.css";
 
 
 function  CardViews()  {
+  var arr = [1,2,3];
+
+  useEffect(()=>{
+    Aos.init({
+      offset: window.innerHeight > 1000 ?  500: 300,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 50,
+    });
+  },[]);
     return(
 
       <div>
-        <Card  className="Card_Box">
-         <Row className="card_row">
+      {arr.map((card)=>{
+        return(
+          <Card  className="Card_Box" data-aos="fade-left">
+         <Row className="card_row" style={{flexDirection: (card%2) == 0 ? "row-reverse" : null}}>
           <Col className="Left-pic ">
           <div className="image_box">
             <img  src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.jpg" className="img-fluid" ></img>
@@ -21,25 +36,9 @@ function  CardViews()  {
           </Col>
           </Row>
         </Card>
+        )
+      })}
       </div>
-      // <Card style={{ width: '50rem',height:"300px" }}>
-      // <Row>
-      // <Col>
-      // <Card.Img variant="top" src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.jpg" className="img-fluid" height="50"/>
-      // </Col>  
-      // <Col>
-      //   <Card.Body>
-      //     <Card.Title>Card Title</Card.Title>
-      //     <Card.Text>
-      //       Some quick example text to build on the card title and make up the bulk of
-      //       the card's content.
-      //     </Card.Text>
-      //     <Button variant="primary">Go somewhere</Button>
-      //   </Card.Body>
-      //   </Col>
-      // </Row>
-
-      // </Card>
 
     )
 }
