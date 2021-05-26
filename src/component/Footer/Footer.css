@@ -1,6 +1,6 @@
 .footer{
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
+    bottom: 0px;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -45,4 +45,12 @@
 }
 .socials img{
     margin: 10px;
+}
+@media (max-width: 420px){
+    .bottom-data{
+        flex-direction: column;
+    }
+    .socials{
+        margin: 0px;
+    }
 }

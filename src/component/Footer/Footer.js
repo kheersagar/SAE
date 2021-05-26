@@ -10,8 +10,6 @@ function Footer() {
           <a href="">Goals</a>
           <a href="">Membership</a>
           <a href="">Team</a>
-          <a href="">Blog</a>
-          <a href="">Membership Enquiry</a>
         </div>
         <hr></hr>
         <div className="bottom-data">
