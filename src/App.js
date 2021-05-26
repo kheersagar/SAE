@@ -3,6 +3,7 @@ import {BrowserRouter as Router,NavLink,Route, Switch} from "react-router-dom";
 import './App.css';
 import  './component/Landingpage/Landing.css';
 import Containers from './component/Container/Containers';
+import Footer from './component/Footer/Footer';
 import CardViews from './component/CardView/CardViews';
 import NavigationBar from './component/NavigationBar/NavigationBar';
 import Landingpage from './component/Landingpage/landing';
@@ -28,6 +29,8 @@ function App() {
             <Containers />
             <CardViews/>
             <DOM/>
+            <Footer />
+
           </Route>
           <Route path="/benefits">
             <h1>benefits</h1>
