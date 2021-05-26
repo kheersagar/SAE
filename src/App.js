@@ -9,6 +9,7 @@ import NavigationBar from './component/NavigationBar/NavigationBar';
 import Landingpage from './component/Landingpage/landing';
 import DOM from './component/DOMech/DOM';
 import { createContext, useReducer, useRef, useState } from 'react';
+import EventPage from './component/EventPage/EventPage';
 const MyContext = createContext();
 
 function App() {
@@ -24,19 +25,17 @@ function App() {
       <div className="App" >
       <NavigationBar />
         <Switch>
-          <Route path="/" >
+          <Route path="/" exact >
             <Landingpage/>
             <Containers />
             <CardViews/>
             <DOM/>
-            <Footer />
-
           </Route>
-          <Route path="/benefits">
+          <Route path="/benefits" exact>
             <h1>benefits</h1>
           </Route>
-          <Route path="/goals" exact>
-            <h1>goals</h1>
+          <Route path="/events" exact>
+            <EventPage />
           </Route>
           <Route path="/member" exact>
             <h1>member</h1>
@@ -45,6 +44,8 @@ function App() {
             <h1>404!</h1>
           </Route>
         </Switch>
+      <Footer />
+
   </div>
   </MyContext.Provider>
   );

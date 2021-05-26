@@ -1,0 +1,41 @@
+.event__main{
+  background-color: #182489;
+  display: flex;
+}
+
+.event__row{
+  flex-direction: column;
+  text-align: left;
+  padding: 5vh 0 5vh 15vw;
+
+}
+.event__row > .col{
+  margin-top: 2rem;
+  max-width: 400px;
+  overflow-wrap: break-word;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  font-family: 'Padauk', sans-serif;
+  color: white;
+}
+.col1_title{
+  font-size: 1rem !important;
+}
+.col2_title{
+  font-size: 2rem !important;
+  font-weight: 600;
+  line-height: 40px !important;
+
+}
+.event__image{
+  padding: 15vw 10vw;
+}
+@media(max-width:1000px){
+  .event__main{
+    flex-direction: column;
+  }
+  .event__row{
+    padding: 5vh 15vw;
+  }
+}
