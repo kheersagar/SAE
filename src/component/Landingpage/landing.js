@@ -28,7 +28,7 @@ function landing() {
         </div>
         
       </div>
-      <div className="right__main" data-aos="fade-left">
+      <div className="right__main" data-aos="fade-left" data-aos-once="true">
         <h5> MEET THE TEAM</h5>
       
 
