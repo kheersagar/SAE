@@ -5,8 +5,8 @@ import  './component/Landingpage/Landing.css';
 import Containers from './component/Container/Containers';
 import CardViews from './component/CardView/CardViews';
 import NavigationBar from './component/NavigationBar/NavigationBar';
-
 import Landingpage from './component/Landingpage/landing';
+import DOM from './component/DOMech/DOM';
 import { createContext, useReducer, useRef, useState } from 'react';
 const MyContext = createContext();
 
@@ -27,6 +27,7 @@ function App() {
             <Landingpage/>
             <Containers />
             <CardViews/>
+            <DOM/>
           </Route>
           <Route path="/benefits">
             <h1>benefits</h1>
