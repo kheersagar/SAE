@@ -2,16 +2,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router,NavLink,Route, Switch} from "react-router-dom";
 import './App.css';
 import Containers from './component/Container/Containers';
+import Footer from './component/Footer/Footer';
 import NavigationBar from './component/NavigationBar/NavigationBar';
 
 
 function App() {
   return (
     <div className="App">
-    <NavigationBar />
+    {/* <NavigationBar /> */}
+    <Footer />
       <Switch>
         <Route path="/" >
-        <Containers />
+        {/* <Containers /> */}
         </Route>
         <Route path="/benefits">
           <h1>benefits</h1>
