@@ -12,18 +12,18 @@ function NavigationBar() {
     top:"0",
     width:"100%",
   }
-  window.addEventListener('scroll',()=>{
-    let scrollY = window.scrollY;
-    if (scrollY === 0) {
-      setScrollDirection(null)
-  }
-  if (scrollY > prevOffset){
-      setScrollDirection("down")
-  } else if (scrollY < prevOffset) {
-      setScrollDirection("up");
-  }
-  setPrevOffset(scrollY);
-  })
+  // window.addEventListener('scroll',()=>{
+  //   let scrollY = window.scrollY;
+  //   if (scrollY === 0) {
+  //     setScrollDirection(null)
+  // }
+  // if (scrollY > prevOffset){
+  //     setScrollDirection("down")
+  // } else if (scrollY < prevOffset) {
+  //     setScrollDirection("up");
+  // }
+  // setPrevOffset(scrollY);
+  // })
   return (
     <div>
       <Navbar collapseOnSelect expand="lg"  bg="light" variant="light" className={`navbar ${scrollDirection =='down' ? 'fade_out' :'fade_int'}` } style={customStyle}>

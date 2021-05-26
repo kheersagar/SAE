@@ -39,13 +39,13 @@
     width: 100%;
     margin-bottom: 50px;
     padding: 3rem,4rem;
-    border: 1px solid rgb(139, 139, 139);
+    /* border: 1px solid rgb(139, 139, 139); */
   }
 } 
 
 @media(max-width:540px){
   .head-line{
-    max-width: 70%;
+   
     
     
   }
