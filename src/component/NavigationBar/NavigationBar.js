@@ -15,18 +15,18 @@ function NavigationBar() {
     top:"0",
     width:"100%",
   }
-  window.addEventListener('scroll',()=>{
-    let scrollY = window.scrollY;
-    if (scrollY === 0) {
-      setScrollDirection(null)
-  }
-  if (scrollY > prevOffset){
-      setScrollDirection("down")
-  } else if (scrollY < prevOffset) {
-      setScrollDirection("up");
-  }
-  setPrevOffset(scrollY);
-  })
+  // window.addEventListener('scroll',()=>{
+  //   let scrollY = window.scrollY;
+  //   if (scrollY === 0) {
+  //     setScrollDirection(null)
+  // }
+  // if (scrollY > prevOffset){
+  //     setScrollDirection("down")
+  // } else if (scrollY < prevOffset) {
+  //     setScrollDirection("up");
+  // }
+  // setPrevOffset(scrollY);
+  // })
 
   Aos.init({
     offset: window.innerHeight > 1000 ?  600: 300,

@@ -6,8 +6,8 @@ import Containers from './component/Container/Containers';
 import Footer from './component/Footer/Footer';
 import CardViews from './component/CardView/CardViews';
 import NavigationBar from './component/NavigationBar/NavigationBar';
-
 import Landingpage from './component/Landingpage/landing';
+import DOM from './component/DOMech/DOM';
 import { createContext, useReducer, useRef, useState } from 'react';
 const MyContext = createContext();
 
@@ -28,6 +28,7 @@ function App() {
             <Landingpage/>
             <Containers />
             <CardViews/>
+            <DOM/>
             <Footer />
 
           </Route>
