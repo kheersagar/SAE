@@ -22,9 +22,10 @@ function landing() {
         
       </div>
       <div className="right__main">
-        <h5> MEET THE TEAM</h5>
+   <div>   <a  id="next"><span class="arrows">&#10230;</span></a> </div>
+   <div>    <p> <a href="#" class="underline">MEET THE TEAM</a></p>
       
-
+               </div>
       </div>
 
     </div>
