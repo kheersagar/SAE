@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Container, Row, Col, Card,Button } from 'react-bootstrap';
 import EventCard from '../EventCard/EventCard';
 import Aos from "aos";
@@ -8,8 +8,32 @@ import "./BOEvent.css";
 import image1 from "../../Image/group.png";
 import image2 from "../../Image/attach.png";
 import image3 from "../../Image/stats.png";
+import eventLogo from "../../Image/eventLogo.png";
 
 function BOEvent() {
+  const event = [
+    {
+      eventImage:"https://image.freepik.com/free-photo/blue-jeep-parking-public-zone_114579-4042.jpg",
+      eventName:"solar car",
+      logo:eventLogo
+
+    },
+    {
+      eventImage:"https://image.freepik.com/free-photo/blue-jeep-parking-public-zone_114579-4042.jpg",
+      eventName:"solar bike",
+      logo:eventLogo
+
+
+    },
+    {
+      eventImage:"https://image.freepik.com/free-photo/blue-jeep-parking-public-zone_114579-4042.jpg",
+      eventName:"solar ",
+      logo:eventLogo
+
+
+    }
+
+];
   var arr = [
 {
   key:"2",
@@ -49,32 +73,38 @@ function BOEvent() {
     });
   },[])
         return (
-            <div className="Bottom_main">
-              <Row className="Main-bottom-row">
-                <Row className="bottom_row1">
-                    <Col className="bottom-img" data-aos="zoom-in-left" data-aos-once="true">
-                    <img src="https://image.freepik.com/free-photo/blue-jeep-parking-public-zone_114579-4042.jpg" className="img-fluid"/>
-                    </Col>
+          
+            event.map((evt)=>{
+              return(
+                <div className="Bottom_main">
+                <Row className="Main-bottom-row">
+                  <Row className="bottom_row1">
+                      <Col className="bottom-img" data-aos="zoom-in-left" data-aos-once="true">
+                      <img src="https://image.freepik.com/free-photo/blue-jeep-parking-public-zone_114579-4042.jpg" className="img-fluid"/>
+                      </Col>
+                  </Row>
+                  <Row className="bottom_row2">
+                      <Col>{evt.eventName}</Col>
+                      <Col><img src={evt.logo} className="event__logo"/></Col>
+                      <Col>Benefits</Col>
+                  </Row>
+                  {arr.map((e)=>{
+                    return(
+                      <Row className={e.className} key={e.key}>
+                      <Col><EventCard title={e.card1_title} description={e.desc1} logo={e.img1}/></Col>
+                      <Col><EventCard title={e.card2_title} description={e.desc2} logo={e.img2}/></Col>
+                      <Col><EventCard title={e.card3_title} description={e.desc3} logo={e.img3}/></Col>
+                      
+                      
+                  </Row>
+                    )
+                  })}
+                  
                 </Row>
-                <Row className="bottom_row2">
-                    <Col>Challenges</Col>
-                    <Col>Logo</Col>
-                    <Col>Solar car</Col>
-                </Row>
-                {arr.map((e)=>{
-                  return(
-                    <Row className={e.className} key={e.key}>
-                    <Col><EventCard title={e.card1_title} description={e.desc1} logo={e.img1}/></Col>
-                    <Col><EventCard title={e.card2_title} description={e.desc2} logo={e.img2}/></Col>
-                    <Col><EventCard title={e.card3_title} description={e.desc3} logo={e.img3}/></Col>
-                    
-                    
-                </Row>
-                  )
-                })}
-                
-              </Row>
-            </div>
+              </div>
+              )
+            })
+
         )
     }
 

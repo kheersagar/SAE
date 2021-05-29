@@ -38,6 +38,7 @@ function App() {
           <Route path="/events" exact>
             <EventPage />
             <BOEvent/>
+
           </Route>
           <Route path="/member" exact>
             <h1>member</h1>
