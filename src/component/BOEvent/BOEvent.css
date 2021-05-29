@@ -14,11 +14,18 @@
   margin-top: 2rem;
   margin-bottom: 4rem;
   width: 50vw;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: 'Padauk', sans-serif;
+  color: #5a5858;
 }
  .bottom_row3, .bottom_row4{
   margin-top: 2rem;
 }
-
+.event__logo{
+  width: 25px;
+  transform: rotate(90deg) scale(1.2);
+}
 
 @media(max-width:1000px){
     .Bottom_main{
@@ -37,3 +44,12 @@
       flex-direction: column;
     }
   }
+@media(max-width:420px){
+  .bottom_row2{
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  .event__logo{
+    margin: 1rem 0;
+  }
+}
