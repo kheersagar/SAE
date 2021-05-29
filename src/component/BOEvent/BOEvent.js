@@ -5,10 +5,17 @@ import Aos from "aos";
 
 import "./BOEvent.css";
 
+import image1 from "../../Image/group.png";
+import image2 from "../../Image/attach.png";
+import image3 from "../../Image/stats.png";
+
 function BOEvent() {
   var arr = [
 {
   key:"2",
+  img1:image1,
+  img2:image2,
+  img3:image3,
   className:"bottom_row3",
   card1_title:"Creating High Performance Environments",
   card2_title:"Creating High Performance Environments",
@@ -20,6 +27,9 @@ function BOEvent() {
 },
 {
     key:"3",
+    img1:image1,
+    img2:image2,
+    img3:image3,
     className:"bottom_row4",
     card1_title:"Leading Multi-Disciplinary Teams",
     card2_title:"Leading Multi-Disciplinary Teams",
@@ -54,9 +64,9 @@ function BOEvent() {
                 {arr.map((e)=>{
                   return(
                     <Row className={e.className} key={e.key}>
-                    <Col><EventCard title={e.card1_title} description={e.desc1}/></Col>
-                    <Col><EventCard title={e.card2_title} description={e.desc2}/></Col>
-                    <Col><EventCard title={e.card3_title} description={e.desc3}/></Col>
+                    <Col><EventCard title={e.card1_title} description={e.desc1} logo={e.img1}/></Col>
+                    <Col><EventCard title={e.card2_title} description={e.desc2} logo={e.img2}/></Col>
+                    <Col><EventCard title={e.card3_title} description={e.desc3} logo={e.img3}/></Col>
                     
                     
                 </Row>
