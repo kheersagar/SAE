@@ -8,25 +8,26 @@ import "./BOEvent.css";
 import image1 from "../../Image/group.png";
 import image2 from "../../Image/attach.png";
 import image3 from "../../Image/stats.png";
+import eventImage1 from "../../Image/e.jpeg";
 import eventLogo from "../../Image/eventLogo.png";
 
 function BOEvent() {
   const event = [
     {
-      eventImage:"https://image.freepik.com/free-photo/blue-jeep-parking-public-zone_114579-4042.jpg",
-      eventName:"solar car",
+      eventImage:eventImage1,
+      eventName:"AUTOMOTIVE TECHNOLOGY",
       logo:eventLogo
 
     },
     {
-      eventImage:"https://image.freepik.com/free-photo/blue-jeep-parking-public-zone_114579-4042.jpg",
+      eventImage:eventImage1,
       eventName:"solar bike",
       logo:eventLogo
 
 
     },
     {
-      eventImage:"https://image.freepik.com/free-photo/blue-jeep-parking-public-zone_114579-4042.jpg",
+      eventImage:eventImage1,
       eventName:"solar ",
       logo:eventLogo
 
@@ -80,7 +81,7 @@ function BOEvent() {
                 <Row className="Main-bottom-row">
                   <Row className="bottom_row1">
                       <Col className="bottom-img" data-aos="zoom-in-left" data-aos-once="true">
-                      <img src="https://image.freepik.com/free-photo/blue-jeep-parking-public-zone_114579-4042.jpg" className="img-fluid"/>
+                      <img src={evt.eventImage} className="img-fluid"/>
                       </Col>
                   </Row>
                   <Row className="bottom_row2">

@@ -43,6 +43,7 @@
 }
 .image_box >img{
   border-bottom-left-radius: 50px;
+  min-height: 400px;
 }
 @media(min-width:1000px){
 

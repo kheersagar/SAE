@@ -8,9 +8,37 @@ import Aos from "aos";
 
 import "aos/dist/aos.css";
 
+import t1 from "../../Image/t1.jpeg";
+import t2 from "../../Image/t2.jpeg";
+
 
 function Containers ()  {
-  var arr = [1,2,3,4];
+  var arr = [
+    {
+      id:1,
+      profile:t1,
+      name:"Arnav Mankar",
+      designation:"Chairperson"
+    },
+    {
+      id:2,
+      profile:t2,
+      name:"Ashish Gautam",
+      designation:"Vice Chairperson"
+    },
+    {
+      id:3,
+      profile:t1,
+      name:"",
+      designation:""
+    },
+    {
+      id:4,
+      profile:t1,
+      name:"",
+      designation:""
+    },
+  ];
  const scrollRef = useRef();
   function scrollHandler(props){
     if(props =="right"){
@@ -24,7 +52,7 @@ function Containers ()  {
 
   useEffect(()=>{
     Aos.init({
-      offset: window.innerHeight > 1000 ?  600: 300,
+      offset: window.innerHeight > 1000 ?  600: 200,
       duration: 600,
       easing: 'ease-in-sine',
       delay: 50,
@@ -48,8 +76,8 @@ function Containers ()  {
                     arr.map((e)=>{
                       return(
                         <Card className="First_card card__img" data-aos="fade-up-right">
-                        <Card.Img variant="left"  src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" className="card__profile"/>
-                        <Card.Title style={{marginTop:"18px", fontWeight:"700"}}>CARD TITLE</Card.Title>
+                        <Card.Img variant="left"  src={e.profile} className="card__profile"/>
+                        <Card.Title style={{marginTop:"18px", fontWeight:"700"}}>{e.name}</Card.Title>
                         <Card.Text  className="textarea">
                             Thre is noting important to read so  chill and enjoy your life.SomeThing Special in our life
                         </Card.Text>

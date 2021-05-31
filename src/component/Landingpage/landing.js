@@ -4,6 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import logo from "../../Image/baja.jpg";
 import logos from "../../Image/vector.jpg";
+import landingImage from "../../Image/landing.jpeg";
 
 function landing() {
   Aos.init({
@@ -36,7 +37,7 @@ function landing() {
 
     </div>
     <div className="image" data-aos="fade-right" data-aos-once="true">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWYlRr3pfOYD4d-6SQmg8KwXOZckYN1qjfpQ&usqp=CAU" alt="piv" className="img-fluid"/>
+      <img src={landingImage} alt="piv" className="img-fluid"/>
     </div>
     </div>
 </>
