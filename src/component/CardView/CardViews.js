@@ -26,7 +26,7 @@ function  CardViews()  {
       id:2,
       profile:sc,
       name:"Dr. Siddharth S Chakrabarti",
-      desination:"(Head of Department-Mechanical Engineering)",
+      designation:"(Head of Department-Mechanical Engineering)",
       message:"Since the establishment of OP Jindal University back in 2014,the university has achieved many awards & recognition on both national and international level in a very short period of time. It gives me immense pleasure while informing you all that now SAE-India has established it’s SAE Collegiate Chapter in OPJU which is now known as SAE-OPJU. It’s a student led club in which they are going to have various opportunities as well as will have an exposure towards mobility industry.The Department of Mechanical Engineering is geared up to meet the test by drawing on its student quality and commitment of members of faculty and staff.It has been our endeavour to ensure that we better ourselves every semester in our efforts. I look forward to building on the tradition of excellence in the areas of research, teaching and leadership in engineering: qualities that Institute of Engineering is counted upon."
     },
     {
