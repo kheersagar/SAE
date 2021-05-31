@@ -4,6 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import logo from "../../Image/baja.jpg";
 import logos from "../../Image/vector.jpg";
+import landingImage from "../../Image/landing.jpeg";
 
 function landing() {
   Aos.init({

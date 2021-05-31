@@ -10,6 +10,7 @@ import Landingpage from './component/Landingpage/landing';
 import DOM from './component/DOMech/DOM';
 import { createContext, useReducer, useRef, useState } from 'react';
 import EventPage from './component/EventPage/EventPage';
+import BOEvent from './component/BOEvent/BOEvent';
 const MyContext = createContext();
 
 function App() {
@@ -36,6 +37,8 @@ function App() {
           </Route>
           <Route path="/events" exact>
             <EventPage />
+            <BOEvent/>
+
           </Route>
           <Route path="/member" exact>
             <h1>member</h1>

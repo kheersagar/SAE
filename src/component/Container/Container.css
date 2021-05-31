@@ -96,3 +96,9 @@
   }
   
   }
+  @media(max-width:640px){
+    .card__profile{
+      width: 70%;
+      height: 45%;
+    }
+  }
