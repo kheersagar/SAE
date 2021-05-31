@@ -38,7 +38,7 @@ justify-content: space-around;
   font-size: 2.5rem;
   line-height: 40px;
 }
-@media(max-width:420px){
+@media(max-width:450px){
   .landing__main{
     flex-direction: column;
   }
@@ -89,6 +89,8 @@ a:hover {
   user-select: none;
   right: 75px;
   transition: 0.2s ease-in;
+  left: -40%;
+  margin-top: -8px;
 }
 
 #next:before {
@@ -115,6 +117,16 @@ a:hover {
   margin: 0px 0px 0px 9rem;
 }
 .arrows{
-  position: absolute;
-  margin: -5.4rem;
+  /* position: absolute; */
+  /* margin: -5.4rem; */
+}
+@media(max-width:640px){
+  .right__main{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+  }
+  #next{
+    display: none;
+  }
 }

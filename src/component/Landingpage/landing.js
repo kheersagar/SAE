@@ -29,10 +29,18 @@ function landing() {
 
           </div>
           <div className="right__main" data-aos="fade-left" data-aos-once="true">
-            <div> <a id="next"><span class="arrows">&#10230;</span></a> </div>
-            <div> <p> <a href="#" class="underline">MEET THE TEAM</a></p>
+            <div style={{position:"relative"}}> 
+              <a id="next">
+                <span class="arrows">&#10230;</span>
+              </a> 
+            </div>
+            <div> 
+              <p>
+                 <a href="#" class="underline">MEET THE TEAM</a>
+              </p>
 
             </div>
+
           </div>
 
         </div>
