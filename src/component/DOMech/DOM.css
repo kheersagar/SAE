@@ -5,6 +5,18 @@
   border-radius: 50%;
   height: 19rem; */
 }
+.paragraph{
+  font-family: 'Padauk', sans-serif;
+}
+.paragraph > h3{
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: initial;
+  margin-bottom: 0.625rem;
+}
+
+
 .maincontainer{
   display: flex;
   padding: 2rem;
