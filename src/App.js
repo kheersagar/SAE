@@ -28,8 +28,8 @@ function App() {
         <Switch>
           <Route path="/" exact >
             <Landingpage/>
-            <Containers />
             <CardViews/>
+            <Containers />
             <DOM/>
           </Route>
           <Route path="/benefits" exact>
