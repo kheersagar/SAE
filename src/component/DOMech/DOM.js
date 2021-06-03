@@ -9,26 +9,19 @@ function DOM() {
 
 
   var arr = [1, 2];
-
-
-
-
-
-
-
   return (
 
     <div>
       {arr.map((card1) => {
         return (
-        <div className="maincontainer">
+        <div className={`maincontainer ${card1 ==1 ? 'first__row' : null}`}>
           {arr.map((card) => {
             return (
 
 
               <div  className="subcontainer"  >
                 <div className="images">
-                  <img src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" className="card__profile"/>
+                  <img src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" className="card__profile__group"/>
               </div>
                 <div className="paragraph">
                <h3> this is op jindal univeristy hello in opju </h3>
@@ -37,11 +30,7 @@ function DOM() {
                   </p>
            </div>
               </div>
-
-
-
-
-            )
+          )
           })}
         </div>
         )
@@ -49,6 +38,5 @@ function DOM() {
   </div>
   )
 }
-
 
 export default DOM

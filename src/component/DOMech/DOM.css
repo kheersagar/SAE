@@ -1,10 +1,4 @@
-.images{
 
-  /* width: 33rem;
- 
-  border-radius: 50%;
-  height: 19rem; */
-}
 .paragraph{
   font-family: 'Padauk', sans-serif;
 }
@@ -19,7 +13,7 @@
 
 .maincontainer{
   display: flex;
-  padding: 2rem;
+  padding: 0 2rem 0 2rem
 }
 .subcontainer{
   display: flex;
@@ -27,13 +21,29 @@
   margin: 0 auto;
   text-align: left;
 }
+.card__profile__group{
+  border-radius: 50%;
+  width: 70%;
+  height: 70%;
+  margin: auto;
+}
+.first__row{
+  margin-top: 1rem;
+}
 @media(max-width:1024px){
   .maincontainer{
     flex-direction: column;
   }
+  
 }
 @media(max-width:640px){
   .subcontainer{
     flex-direction: column;
+  }
+  .card__profile__group{
+    width: 60%;
+  }
+  .paragraph{
+    margin-top: 1rem;
   }
 }
