@@ -1,52 +1,49 @@
-.Main_itembox{
-  display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
-  padding: 10px 33px;
-}
-.Item_content{
+
+.paragraph{
   font-family: 'Padauk', sans-serif;
-  margin-left: 0.7rem;
+}
+.paragraph > h3{
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: initial;
+  margin-bottom: 0.625rem;
 }
 
-.Content_2{
+
+.maincontainer{
   display: flex;
-  flex: 1;
-  text-align: initial;
+  padding: 0 2rem 0 2rem
 }
-
-.head-line{
-  font-size:1.2rem;
-  font-weight:bold;
-  margin-bottom: 0.7rem;
-  text-align: initial;
+.subcontainer{
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
 }
-
-.Pro_Photo >img{
+.card__profile__group{
   border-radius: 50%;
-  width: 12rem;
-  height: 12rem;
-  overflow: hidden;
+  width: 70%;
+  height: 70%;
+  margin: auto;
 }
-  
- 
-@media(min-width:1000px){
-  
-  .Main_itembox{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 50px;
-    padding: 3rem,4rem;
-    /* border: 1px solid rgb(139, 139, 139); */
+.first__row{
+  margin-top: 1rem;
+}
+@media(max-width:1024px){
+  .maincontainer{
+    flex-direction: column;
   }
-} 
-
-@media(max-width:540px){
-  .head-line{
-   
-    
-    
+  
+}
+@media(max-width:640px){
+  .subcontainer{
+    flex-direction: column;
+  }
+  .card__profile__group{
+    width: 60%;
+  }
+  .paragraph{
+    margin-top: 1rem;
   }
 }
