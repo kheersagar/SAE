@@ -21,8 +21,15 @@
   background-image: url(../../Image/card_background.jpg);
   background-size: cover;
   background-position: right;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+  transition: all .3s ease-in-out;
 }
-
+.card__img:hover{
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  transform: translate3d(0px, -5px, 0px) !important;
+  transition: all 0.5s ease !important;
+}
 .arrow{
   border-radius: 50%;
   width: 60px;

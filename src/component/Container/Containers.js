@@ -8,36 +8,81 @@ import Aos from "aos";
 
 import "aos/dist/aos.css";
 
-import t1 from "../../Image/t1.jpeg";
+import arnav from "../../Image/arnav.jpeg";
+import alok from "../../Image/alok.jpeg";
+import akshat from "../../Image/akshat.jpeg";
+import amit from "../../Image/amit.jpeg";
+import ayush from "../../Image/ayush.jpg";
+import bindeswar from "../../Image/bindeswar.jpeg";
+import chirag from "../../Image/chirag.jpg";
+import yasharth from "../../Image/yasharth.jpg";
+import manish from "../../Image/manish.jpeg";
 import t2 from "../../Image/t2.jpeg";
+import { YouTube } from '@material-ui/icons';
 
 
 function Containers ()  {
   var arr = [
     {
       id:1,
-      profile:t1,
-      name:"Arnav Mankar",
-      designation:"Chairperson"
+      profile:arnav,
+      name:"ARNAV MANKAR",
+      designation:" Student Chairperson"
     },
     {
       id:2,
       profile:t2,
-      name:"Ashish Gautam",
-      designation:"Vice Chairperson"
+      name:"ASHISH GAUTAM",
+      designation:"Student Vice Chairperson"
     },
     {
       id:3,
-      profile:t1,
-      name:"",
-      designation:""
+      profile:bindeswar,
+      name:"DINDERSHWAR DASH",
+      designation:"Student secretary"
     },
     {
       id:4,
-      profile:t1,
-      name:"",
-      designation:""
+      profile:yasharth,
+      name:"YASHARTH MISHRA",
+      designation:"Student Publicity Chairperson"
     },
+    {
+      id:5,
+      profile:ayush,
+      name:"AYUSH KUMAR PANDEY",
+      designation:"Student Publicity Vice- Chairperson"
+    },
+    {
+      id:6,
+      profile:chirag,
+      name:"CHIRAG MISHRA",
+      designation:"Student Membership Chairperson"
+    },
+    {
+      id:7,
+      profile:alok,
+      name:"ALOK KUMAR",
+      designation:"Student Membership Vice Chairperson"
+    },
+    {
+      id:8,
+      profile:amit,
+      name:"AMIT KUMAR SAIHI",
+      designation:"Student Treasurer"
+    },
+    {
+      id:9,
+      profile:manish,
+      name:"MANISH PATEL",
+      designation:"Student Program Chairperson"
+    },
+    {
+      id:10,
+      profile:akshat,
+      name:"AKSHAT PANDEY",
+      designation:"Student Reception Chairperson"
+    }
   ];
  const scrollRef = useRef();
   function scrollHandler(props){
@@ -77,7 +122,8 @@ function Containers ()  {
                       return(
                         <Card className="First_card card__img" data-aos="fade-up-right">
                         <Card.Img variant="left"  src={e.profile} className="card__profile"/>
-                        <Card.Title style={{marginTop:"18px", fontWeight:"700"}}>{e.name}</Card.Title>
+                        <Card.Title style={{marginTop:"18px",marginBottom:"0px", fontWeight:"700"}}>{e.name}</Card.Title>
+                        <Card.Title style={{ fontWeight:"500",color: "dimgray"}}>{e.designation}</Card.Title>
                         <Card.Text  className="textarea">
                             Thre is noting important to read so  chill and enjoy your life.SomeThing Special in our life
                         </Card.Text>
