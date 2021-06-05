@@ -32,9 +32,12 @@ function App() {
             <Containers />
             <DOM/>
           </Route>
-          {/* <Route path="/benefits" exact>
-            <h1>benefits</h1>
-          </Route> */}
+          <Route path="/SAE" exact >
+            <Landingpage/>
+            <CardViews/>
+            <Containers />
+            <DOM/>
+          </Route>
           <Route path="/events" exact>
             <EventPage />
             <BOEvent/>
