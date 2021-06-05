@@ -18,6 +18,7 @@ function landing() {
     easing: 'ease-in-sine',
     delay: 50,
   });
+
   return (
     <>
       <div className="main__main">
@@ -26,11 +27,11 @@ function landing() {
             <div>
               <div className="moto" data-aos="fade-right">
                 SUPPORTING, CONNECTING &<br />
-          DEVELOPING SPORTING DIRECTORS
+          DEVELOPING SAE SOCIETY
           </div>
             </div>
             <div className="cmp_name" data-aos="fade-right">
-              Association of<br /> Sporting Directors
+            Society of <br /> Automotive Engineers
         </div>
 
           </div>
@@ -51,7 +52,6 @@ function landing() {
 
         </div>
         <div className="image" data-aos="fade-right" data-aos-once="true">
-          {/* <img src={landingImage} alt="piv" className="img-fluid" /> */}
           <Carousel>
             <Carousel.Item interval={1000}>
               <img
@@ -60,8 +60,8 @@ function landing() {
                 alt="First slide"
               />
               <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h3>Electric Solaric Vehicle</h3>
+                {/* <p>Firs solaric Vehicle in the State</p> */}
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={500}>
@@ -71,8 +71,8 @@ function landing() {
                 alt="Second slide"
               />
               <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>ESVC is Asia’s Biggest Solar Challenge</h3>
+                {/* <p>Awarded Spirit of ESVC for our vehicle.</p> */}
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -82,8 +82,8 @@ function landing() {
                 alt="Third slide"
               />
               <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <h3>Innovative Engineer of OPJU </h3>
+                {/* <p>First establishment of such unique vehicle in the state. </p> */}
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>

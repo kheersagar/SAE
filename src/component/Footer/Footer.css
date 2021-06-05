@@ -37,7 +37,7 @@
     color: gray;
 }
 .office{
-    margin-right: 50px;
+    flex: 1;
 }
 .socials{
     margin-left: 40px;
