@@ -6,6 +6,8 @@ import { Container, Row, Col, Card,Button } from 'react-bootstrap';
 import "aos/dist/aos.css";
 import "./EventPage.css";
 
+import electro from "../../Image/electro.jpeg";
+
 function EventPage() {
   useEffect(()=>{
     Aos.init({
@@ -25,15 +27,16 @@ function EventPage() {
         Support, Connect and Develop
         </Col>
         <Col data-aos-once="true" data-aos="zoom-in-left">
-        Here at Association of Sporting Directors (ASD), we provide regular and high quality support, news and connections for sporting directors within professional football.
+        Mission of SAE Collegiate Chapter at OP Jindal University is that members(learners) should be provided more technical knowledge through Industrial Oriented Lecture Sessions along with various extra-curricular skills like leadership, organizational, communication, project management, conflict resolution etc.
         </Col>
         <Col data-aos-once="true" data-aos="zoom-in-right">
-        Our members create this pioneering environment for leaders to support, connect and develop. We help our members prepare for future challenges of the game, which we achieve with our commitment to being evidence-led and expertly informed in our practice.
+        In a relaxed and non-threatening environment which glooms their personality personally as well as professionally
+Making the student to learn and realize their talent.
         </Col>
     </Row>
     <Row>
       <Col className="event__image" data-aos-once="true" data-aos="zoom-in">  
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWYlRr3pfOYD4d-6SQmg8KwXOZckYN1qjfpQ&usqp=CAU" alt="piv" className="img-fluid"/>
+        <img src={electro} alt="piv" className="img-fluid rounded"/>
       </Col>
     </Row>
     </div>

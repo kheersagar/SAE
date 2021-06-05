@@ -2,15 +2,18 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Footer.css";
 
+import linkedln from "../../Image/linkedln.png";
+import instagram from "../../Image/instagram.png";
+
 function Footer() {
   return (
     <footer className="footer">
       <div className="inner-div">
         <div className="links">
-          <NavLink to="/benefits" >Benefits</NavLink>
-          <NavLink to="/events" >Events</NavLink>
-          <NavLink to="" >Membership</NavLink>
-          <NavLink to="" >Team</NavLink>
+          <NavLink to="/SAE/benefits" >Benefits</NavLink>
+          <NavLink to="/SAE/events" >Events</NavLink>
+          <NavLink to="/SAE/" >Membership</NavLink>
+          <NavLink to="/SAE/" >Team</NavLink>
         </div>
         <hr></hr>
         <div className="bottom-data">
@@ -33,8 +36,12 @@ function Footer() {
           </div>
           <div className="socials">
             <h4>FOLLOW US</h4>
-            <img src="/svg/twitter.svg" width="40px"/>
-            <img src="/svg/linkedin.svg" width="40px" />
+            <a href="https://www.linkedin.com/company/sae-opju" >
+              <img src={linkedln} width="40px"/>
+            </a>
+            <a href="https://instagram.com/sae_opju?utm_medium=copy_link">
+              <img src={instagram} width="40px" />
+            </a>
           </div>
         </div>
       </div>
