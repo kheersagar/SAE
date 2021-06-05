@@ -19,51 +19,46 @@ function BOEvent() {
       logo:eventLogo
 
     },
-    {
-      eventImage:eventImage1,
-      eventName:"solar bike",
-      logo:eventLogo
+    // {
+    //   eventImage:eventImage1,
+    //   eventName:"solar bike",
+    //   logo:eventLogo
 
 
-    },
-    {
-      eventImage:eventImage1,
-      eventName:"solar ",
-      logo:eventLogo
-
-
-    }
-
+    // }
 ];
   var arr = [
 {
-  key:"2",
+  key:"1",
   img1:image1,
   img2:image2,
   img3:image3,
   className:"bottom_row3",
-  card1_title:"Creating High Performance Environments",
-  card2_title:"Creating High Performance Environments",
-  card3_title:"Creating High Performance Environments",
-  desc1:"Adapting to the introduction of regulations that affect the performance environment",
-  desc2:"Adapting to the introduction of regulations that affect the performance environment",
-  desc3:"Adapting to the introduction of regulations that affect the performance environment",
+  card1_title:"About",
+  card2_title:"Association",
+  card3_title:"Participate",
+  desc1:"The Department of Mechanical Engineering, OP Jindal University, Raigarh is organizing AUTOGYAN, a National Level Online Quiz on 20th June 2021 at 5:00 PM on Automotive Technology.",
+  desc2:"In association with SESI, CREDA, IEEE OPJU Chapter, and SAE OPJU Collegiate Club for the students of class 10th, 11th and 12th. Participate to explore yourself to the world of Automobiles and win exciting prizes.",
+  desc3:"To register for the quiz click the below link",
+  descLink:"https://lnkd.in/e-qa2S2",
 
 },
-{
-    key:"3",
-    img1:image1,
-    img2:image2,
-    img3:image3,
-    className:"bottom_row4",
-    card1_title:"Leading Multi-Disciplinary Teams",
-    card2_title:"Leading Multi-Disciplinary Teams",
-    card3_title:"Leading Multi-Disciplinary Teams",
-    desc1:"Strategies and practices to find the best talent on and off the pitch",
-    desc2:"Strategies and practices to find the best talent on and off the pitch",
-    desc3:"Strategies and practices to find the best talent on and off the pitch",
+// {
+//     key:"2",
+//     img1:image1,
+//     img2:image2,
+//     img3:image3,
+//     className:"bottom_row4",
+//     card1_title:"Leading Multi-Disciplinary Teams",
+//     card2_title:"Leading Multi-Disciplinary Teams",
+//     card3_title:"Leading Multi-Disciplinary Teams",
+//     desc1:"Strategies and practices to find the best talent on and off the pitch",
+//     desc2:"Strategies and practices to find the best talent on and off the pitch",
+//     desc3:"Strategies and practices to find the best talent on and off the pitch",
+//     descLink:"https://lnkd.in/e-qa2S2"
 
-  }];
+//   }
+];
 
   useEffect(()=>{
     Aos.init({
@@ -92,9 +87,9 @@ function BOEvent() {
                   {arr.map((e)=>{
                     return(
                       <Row className={e.className} key={e.key}>
-                      <Col><EventCard title={e.card1_title} description={e.desc1} logo={e.img1}/></Col>
-                      <Col><EventCard title={e.card2_title} description={e.desc2} logo={e.img2}/></Col>
-                      <Col><EventCard title={e.card3_title} description={e.desc3} logo={e.img3}/></Col>
+                      <Col><EventCard title={e.card1_title} description={e.desc1} logo={e.img1} /></Col>
+                      <Col><EventCard title={e.card2_title} description={e.desc2} logo={e.img2} /></Col>
+                      <Col><EventCard title={e.card3_title} description={e.desc3} logo={e.img3} link={e.descLink}/></Col>
                       
                       
                   </Row>

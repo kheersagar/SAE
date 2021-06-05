@@ -26,12 +26,6 @@ function App() {
       <div className="App" >
       <NavigationBar />
         <Switch>
-          <Route path="/" exact >
-            <Landingpage/>
-            <CardViews/>
-            <Containers />
-            <DOM/>
-          </Route>
           <Route path="/SAE" exact >
             <Landingpage/>
             <CardViews/>
@@ -41,7 +35,6 @@ function App() {
           <Route path="/SAE/events" exact>
             <EventPage />
             <BOEvent/>
-
           </Route>
           <Route path="/SAE/member" exact>
             <h1>member</h1>
