@@ -38,12 +38,12 @@ function App() {
             <Containers />
             <DOM/>
           </Route>
-          <Route path="/events" exact>
+          <Route path="/SAE/events" exact>
             <EventPage />
             <BOEvent/>
 
           </Route>
-          <Route path="/member" exact>
+          <Route path="/SAE/member" exact>
             <h1>member</h1>
           </Route>
           <Route>

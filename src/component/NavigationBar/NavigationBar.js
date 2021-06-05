@@ -38,7 +38,7 @@ function NavigationBar() {
     <div>
       <Navbar collapseOnSelect expand="lg"  bg="light" variant="light" className={`navbar ${scrollDirection =='down' ? 'fade_out' :'fade_int'}` } style={customStyle}>
       <Navbar.Brand className="nav__left">
-        <NavLink to="/" activeClassName="nav__active" className="nav-link">
+        <NavLink to="/SAE" activeClassName="nav__active" className="nav-link">
           <img src={logo} alt="logo" width="100" height="35" style={{marginRight:"10px"}}/> 
         {/* React-Bootstrap */}
         </NavLink>
@@ -46,13 +46,13 @@ function NavigationBar() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto nav__middle">
-        <NavLink to="/benefits" exact activeClassName="nav__active" className="nav-link">
+        <NavLink to="/SAE/benefits" exact activeClassName="nav__active" className="nav-link">
           Benefits
         </NavLink>
-        <NavLink to="/events" exact activeClassName="nav__active" className="nav-link">
+        <NavLink to="/SAE/events" exact activeClassName="nav__active" className="nav-link">
           Events
         </NavLink>
-        <NavLink to="/member" exact activeClassName="nav__active" className="nav-link">
+        <NavLink to="/SAE/member" exact activeClassName="nav__active" className="nav-link">
           Member
         </NavLink>
         </Nav>
