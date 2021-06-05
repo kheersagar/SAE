@@ -48,6 +48,8 @@
   }
   .card__profile__group{
     width: 60%;
+    float: right;
+    min-height: 150px;
   }
   .paragraph{
     margin-top: 1rem;

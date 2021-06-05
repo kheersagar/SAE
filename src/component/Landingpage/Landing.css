@@ -143,6 +143,9 @@ a:hover {
   .w-100{
     max-height: 177px;
   }
+  .landing__main{
+    padding: 3rem 4rem;
+  }
 }
 @media(max-width:450px){
   .landing__main{

@@ -109,7 +109,7 @@ function Containers ()  {
              <Row className="row1">
                  <Col lg={true} style={{marginBottom:"2rem"}} data-aos="fade-right">
                   <div className="conatiner__text">
-                 The Department organizes number of short term training programs, workshop and seminars from time to time for faculties and students for sharing and updating their technical knowledge in a regular and periodic manner. 
+                 The Department organizes number of short term training programs, workshop and seminars from time to time for faculties and students for sharing and updating their technical knowledge in a regular and periodic manner. Top Team Leaders
                   </div>
                   <Col className="scroll__btn" >
                   <Button  variant="secondary" className="btn_left arrow" onClick={()=>{scrollHandler("left")}}><ArrowBackIosIcon/></Button>
