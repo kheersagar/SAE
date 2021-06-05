@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Footer.css";
 
 function Footer() {
@@ -6,10 +7,10 @@ function Footer() {
     <footer className="footer">
       <div className="inner-div">
         <div className="links">
-          <a href="">Benefits</a>
-          <a href="">Goals</a>
-          <a href="">Membership</a>
-          <a href="">Team</a>
+          <NavLink to="/benefits" >Benefits</NavLink>
+          <NavLink to="/events" >Events</NavLink>
+          <NavLink to="" >Membership</NavLink>
+          <NavLink to="" >Team</NavLink>
         </div>
         <hr></hr>
         <div className="bottom-data">
