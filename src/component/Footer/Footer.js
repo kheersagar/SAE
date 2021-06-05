@@ -15,18 +15,20 @@ function Footer() {
         <hr></hr>
         <div className="bottom-data">
           <div className="office">
-            <h4>OFFICE</h4>
+            <h4>OPJU</h4>
             <p>
-              Suite 9, Rockfield House, 512 Darwen Road, Bromley Cross, Bolton,
-              Lancashire, BL7 9DX
+            OPJU is considered to be India's Steel University established under the JSPL flagship.
             </p>
           </div>
           <div className ="legal">
-            <h4>LEGAL</h4>
+            <h4>Developed By</h4>
             <p>
-              This site is protected by Google reCAPTCHA. Privacy Policy. ©
-              Association of Sporting Directors. 2005 – 2020. All Rights
-              Reserved.
+              <ul>
+                <li>Kheersagar Parja</li>
+                <li>Swati Mishra</li>
+                <li>Shikhar Lohiya</li>
+                <li>Sarthak Suhas Bakre</li>
+              </ul>
             </p>
           </div>
           <div className="socials">

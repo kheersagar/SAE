@@ -123,10 +123,7 @@ function Containers ()  {
                         <Card className="First_card card__img" data-aos="fade-up-right">
                         <Card.Img variant="left"  src={e.profile} className="card__profile"/>
                         <Card.Title style={{marginTop:"18px",marginBottom:"0px", fontWeight:"700"}}>{e.name}</Card.Title>
-                        <Card.Title style={{ fontWeight:"500",color: "dimgray"}}>{e.designation}</Card.Title>
-                        <Card.Text  className="textarea">
-                            Thre is noting important to read so  chill and enjoy your life.SomeThing Special in our life
-                        </Card.Text>
+                        <Card.Title style={{ fontWeight:"500",color: "dimgray",marginTop:"10px"}}>{e.designation}</Card.Title>
                       </Card>
                       )
                     })
