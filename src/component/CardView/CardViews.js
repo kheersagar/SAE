@@ -47,7 +47,7 @@ function  CardViews()  {
 
   useEffect(()=>{
     Aos.init({
-      offset: window.innerHeight > 1000 ?  500: 300,
+      offset: window.innerHeight > 1000 ?  500: 200,
       duration: 600,
       easing: 'ease-in-sine',
       delay: 50,
