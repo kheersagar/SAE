@@ -30,6 +30,7 @@
 }
 .event__image{
   padding: 15vw 10vw;
+  max-width: 70vw;
 }
 @media(max-width:1000px){
   .event__main{
@@ -37,5 +38,8 @@
   }
   .event__row{
     padding: 5vh 15vw;
+  }
+  .event__image{
+    max-width: 100%;
   }
 }
