@@ -2,13 +2,9 @@ import React from 'react';
 import Aos from "aos";
 
 import "aos/dist/aos.css";
-import logo from "../../Image/baja.jpg";
-import logos from "../../Image/vector.jpg";
-import  landingImage1 from "../../Image/1.jpeg";
-import  landingImage2 from "../../Image/2.jpeg";
-import  landingImage4 from "../../Image/4.jpeg";
-import  landingImage5 from "../../Image/5.jpeg";
-import landingImage3 from "../../Image/landing.jpeg";
+import group from "../../Image/group.jpeg";
+import group2 from "../../Image/group2.jpeg";
+import group3 from "../../Image/group3.jpeg";
 import { Carousel } from 'react-bootstrap';
 
 function landing() {
@@ -18,7 +14,23 @@ function landing() {
     easing: 'ease-in-sine',
     delay: 50,
   });
-
+var carousel = [
+  {
+    id:1,
+    Image:group,
+    caption:"Team SAE"
+  },
+  {
+    id:2,
+    Image:group2,
+    caption:"Electric Solaric Vehicle"
+  },
+  {
+    id:3,
+    Image:group3,
+    caption:"OPJU"
+  }
+];
   return (
     <>
       <div className="main__main">
@@ -53,39 +65,21 @@ function landing() {
         </div>
         <div className="image" data-aos="fade-right" data-aos-once="true">
           <Carousel>
-            <Carousel.Item interval={1000}>
+          {carousel.map((e)=>{
+            return(
+              <Carousel.Item interval={1000}>
               <img
                 className="d-block w-100"
-                src={landingImage3}
+                src={e.Image}
                 alt="First slide"
               />
               <Carousel.Caption>
-                <h3>Electric Solaric Vehicle</h3>
-                {/* <p>Firs solaric Vehicle in the State</p> */}
+                <h3>{e.caption}</h3>
               </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item interval={500}>
-              <img
-                className="d-block w-100"
-                src={landingImage4}
-                alt="Second slide"
-              />
-              <Carousel.Caption>
-                <h3>ESVC is Asia’s Biggest Solar Challenge</h3>
-                {/* <p>Awarded Spirit of ESVC for our vehicle.</p> */}
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={landingImage5}
-                alt="Third slide"
-              />
-              <Carousel.Caption>
-                <h3>Innovative Engineer of OPJU </h3>
-                {/* <p>First establishment of such unique vehicle in the state. </p> */}
-              </Carousel.Caption>
-            </Carousel.Item>
+            )
+          })}
+
           </Carousel>
         </div>
       </div>
