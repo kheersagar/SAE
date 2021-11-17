@@ -39,7 +39,7 @@ function NavigationBar() {
       <Navbar collapseOnSelect expand="lg"  bg="light" variant="light" className={`navbar ${scrollDirection =='down' ? 'fade_out' :'fade_int'}` } style={customStyle}>
       <Navbar.Brand className="nav__left">
         <NavLink to="/SAE" activeClassName="nav__active" className="nav-link">
-          <img src={logo} alt="logo" width="100" height="35" style={{marginRight:"10px"}}/> 
+          <img src={logo} alt="logo" width="100" height="35" style={{marginRight:"10px",backgroundColor:"black",borderRadius:"4px"}}/> 
         {/* React-Bootstrap */}
         </NavLink>
       </Navbar.Brand>
@@ -58,7 +58,7 @@ function NavigationBar() {
         </Nav>
         <Nav className="nav__right">
           <NavLink activeClassName="nav__active" className="nav-link" to="/member">
-            More deets
+            More details
           </NavLink>
         </Nav>
       </Navbar.Collapse>
